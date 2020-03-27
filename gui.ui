@@ -84,7 +84,7 @@
      <enum>QTabWidget::Rounded</enum>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>4</number>
     </property>
     <property name="iconSize">
      <size>
@@ -280,6 +280,8 @@
             <font>
              <pointsize>10</pointsize>
              <underline>true</underline>
+             <strikeout>false</strikeout>
+             <kerning>true</kerning>
             </font>
            </property>
            <property name="text">
@@ -293,6 +295,8 @@
             <font>
              <pointsize>10</pointsize>
              <underline>true</underline>
+             <strikeout>false</strikeout>
+             <kerning>true</kerning>
             </font>
            </property>
            <property name="text">
@@ -489,15 +493,15 @@
      <widget class="QLabel" name="label_3">
       <property name="geometry">
        <rect>
-        <x>490</x>
+        <x>510</x>
         <y>80</y>
-        <width>167</width>
-        <height>28</height>
+        <width>141</width>
+        <height>19</height>
        </rect>
       </property>
       <property name="font">
        <font>
-        <pointsize>14</pointsize>
+        <pointsize>12</pointsize>
         <underline>false</underline>
         <strikeout>false</strikeout>
         <kerning>true</kerning>
@@ -521,7 +525,7 @@
       <property name="geometry">
        <rect>
         <x>480</x>
-        <y>280</y>
+        <y>270</y>
         <width>191</width>
         <height>31</height>
        </rect>
@@ -529,6 +533,9 @@
       <property name="font">
        <font>
         <pointsize>10</pointsize>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+        <kerning>true</kerning>
        </font>
       </property>
       <property name="text">
@@ -584,6 +591,9 @@
        <property name="font">
         <font>
          <pointsize>9</pointsize>
+         <underline>false</underline>
+         <strikeout>false</strikeout>
+         <kerning>true</kerning>
         </font>
        </property>
        <property name="text">
