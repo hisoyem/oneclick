@@ -26,10 +26,9 @@ class MyWindow(QtWidgets.QMainWindow):
         self.ui.setupUi(self)  # Инициализация GUI
 
 
-app = QtWidgets.QApplication([])
-application = MyWindow()
-application.show()
-# aa
-# ga's
-a = 121
-sys.exit(app.exec())
+if __name__ == '__main__':
+    app = QtWidgets.QApplication([])
+    application = MyWindow()
+    application.show()
+
+    sys.exit(app.exec())
