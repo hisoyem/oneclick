@@ -84,7 +84,7 @@
      <enum>QTabWidget::Rounded</enum>
     </property>
     <property name="currentIndex">
-     <number>4</number>
+     <number>1</number>
     </property>
     <property name="iconSize">
      <size>
@@ -273,63 +273,89 @@
         </widget>
        </item>
        <item row="5" column="0" colspan="2">
-        <layout class="QHBoxLayout" name="horizontalLayout_7">
-         <item>
-          <widget class="QCheckBox" name="checkBox_5">
-           <property name="font">
-            <font>
-             <pointsize>10</pointsize>
-             <underline>true</underline>
-                <strikeout>false</strikeout>
-                <kerning>true</kerning>
-            </font>
-           </property>
-              <property name="text">
-                  <string>Headless browser</string>
-              </property>
-          </widget>
-         </item>
-            <item>
-                <spacer name="horizontalSpacer_3">
-                    <property name="orientation">
-                        <enum>Qt::Horizontal</enum>
-                    </property>
-                    <property name="sizeHint" stdset="0">
-                        <size>
-                            <width>40</width>
-                            <height>20</height>
-                        </size>
-                    </property>
-                </spacer>
-            </item>
-            <item>
-                <widget class="QCheckBox" name="checkBox_6">
-                    <property name="font">
-                        <font>
-                            <pointsize>10</pointsize>
-                            <underline>true</underline>
-                            <strikeout>false</strikeout>
-                            <kerning>true</kerning>
-                        </font>
-                    </property>
-                    <property name="text">
-                        <string>Google Chrome</string>
-                    </property>
-                </widget>
-            </item>
-        </layout>
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+               <item>
+                   <spacer name="horizontalSpacer_4">
+                       <property name="orientation">
+                           <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                           <size>
+                               <width>40</width>
+                               <height>20</height>
+                           </size>
+                       </property>
+                   </spacer>
+               </item>
+               <item>
+                   <widget class="QCheckBox" name="checkBox_5">
+                       <property name="font">
+                           <font>
+                               <pointsize>10</pointsize>
+                               <underline>true</underline>
+                               <strikeout>false</strikeout>
+                               <kerning>true</kerning>
+                           </font>
+                       </property>
+                       <property name="text">
+                           <string>Headless browser</string>
+                       </property>
+                   </widget>
+               </item>
+               <item>
+                   <spacer name="horizontalSpacer_3">
+                       <property name="orientation">
+                           <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                           <size>
+                               <width>40</width>
+                               <height>20</height>
+                           </size>
+                       </property>
+                   </spacer>
+               </item>
+               <item>
+                   <widget class="QCheckBox" name="checkBox_6">
+                       <property name="font">
+                           <font>
+                               <pointsize>10</pointsize>
+                               <underline>true</underline>
+                               <strikeout>false</strikeout>
+                               <kerning>true</kerning>
+                           </font>
+                       </property>
+                       <property name="text">
+                           <string>Google Chrome</string>
+                       </property>
+                   </widget>
+               </item>
+               <item>
+                   <spacer name="horizontalSpacer_5">
+                       <property name="orientation">
+                           <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                           <size>
+                               <width>40</width>
+                               <height>20</height>
+                           </size>
+                       </property>
+                   </spacer>
+               </item>
+           </layout>
        </item>
-       <item row="6" column="0" colspan="2">
-        <widget class="QPushButton" name="pushButton">
-         <property name="font">
-          <font>
-           <pointsize>10</pointsize>
-           <underline>false</underline>
-           <strikeout>false</strikeout>
-           <kerning>true</kerning>
-          </font>
-         </property>
-         <property name="text">
+          <item row="7" column="0" colspan="2">
+              <widget class="QPushButton" name="pushButton">
+                  <property name="font">
+                      <font>
+                          <pointsize>10</pointsize>
+                          <underline>false</underline>
+                          <strikeout>false</strikeout>
+                          <kerning>true</kerning>
+                      </font>
+                  </property>
+                  <property name="text">
           <string>Add to tasks</string>
          </property>
         </widget>
@@ -438,7 +464,7 @@
             </font>
            </property>
            <property name="text">
-            <string>+10 mins</string>
+               <string>+15 mins</string>
            </property>
           </widget>
          </item>
@@ -549,14 +575,14 @@
          <height>18</height>
         </rect>
        </property>
-       <property name="font">
-        <font>
-            <pointsize>9</pointsize>
-            <underline>false</underline>
-            <strikeout>false</strikeout>
-            <kerning>true</kerning>
-        </font>
-       </property>
+          <property name="font">
+              <font>
+                  <pointsize>9</pointsize>
+                  <underline>false</underline>
+                  <strikeout>false</strikeout>
+                  <kerning>true</kerning>
+              </font>
+          </property>
           <property name="text">
               <string>Quasar Cook AYCD v0.1</string>
           </property>

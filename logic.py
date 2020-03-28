@@ -16,14 +16,35 @@ from gui import Ui_MainWindow  # импорт сгенерированного �
 # self.tableWidget.setColumnWidth(5, 191)
 
 class MyWindow(QtWidgets.QMainWindow):
-    # def __init__(self):
-    #     super(MyWindow, self).__init__()
-    #     self.ui = Ui_MainWindow()
-    #     self.ui.setupUi(self)
+
     def __init__(self, parent=None):
         QtWidgets.QWidget.__init__(self, parent)
         self.ui = Ui_MainWindow()  # Экземпляр класса Ui_MainWindow, в нем конструктор всего GUI.
         self.ui.setupUi(self)  # Инициализация GUI
+        self.ui.pushButton_3.clicked.connect(self.add_5_mins)
+        self.ui.pushButton_4.clicked.connect(self.add_15_mins)
+        self.ui.pushButton_5.clicked.connect(self.add_60_mins)
+        self.ui.pushButton_6.clicked.connect(self.set_0_mins)
+
+    def add_5_mins(self):
+        """Add 5 minutes to interval spinBox"""
+
+        self.ui.spinBox.setValue(self.ui.spinBox.value() + 5)
+
+    def add_15_mins(self):
+        """Add 15 minutes to interval spinBox"""
+
+        self.ui.spinBox.setValue(self.ui.spinBox.value() + 15)
+
+    def add_60_mins(self):
+        """Add 60 minutes to interval spinBox"""
+
+        self.ui.spinBox.setValue(self.ui.spinBox.value() + 60)
+
+    def set_0_mins(self):
+        """Add 60 minutes to interval spinBox"""
+
+        self.ui.spinBox.setValue(0)
 
 
 if __name__ == '__main__':
