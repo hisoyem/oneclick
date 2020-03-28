@@ -280,30 +280,43 @@
             <font>
              <pointsize>10</pointsize>
              <underline>true</underline>
-             <strikeout>false</strikeout>
-             <kerning>true</kerning>
+                <strikeout>false</strikeout>
+                <kerning>true</kerning>
             </font>
            </property>
-           <property name="text">
-            <string>Headless browser</string>
-           </property>
+              <property name="text">
+                  <string>Headless browser</string>
+              </property>
           </widget>
          </item>
-         <item>
-          <widget class="QCheckBox" name="checkBox_6">
-           <property name="font">
-            <font>
-             <pointsize>10</pointsize>
-             <underline>true</underline>
-             <strikeout>false</strikeout>
-             <kerning>true</kerning>
-            </font>
-           </property>
-           <property name="text">
-            <string>Google Chrome</string>
-           </property>
-          </widget>
-         </item>
+            <item>
+                <spacer name="horizontalSpacer_3">
+                    <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                        <size>
+                            <width>40</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+            </item>
+            <item>
+                <widget class="QCheckBox" name="checkBox_6">
+                    <property name="font">
+                        <font>
+                            <pointsize>10</pointsize>
+                            <underline>true</underline>
+                            <strikeout>false</strikeout>
+                            <kerning>true</kerning>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Google Chrome</string>
+                    </property>
+                </widget>
+            </item>
         </layout>
        </item>
        <item row="6" column="0" colspan="2">
@@ -490,58 +503,6 @@
      <attribute name="title">
       <string>License</string>
      </attribute>
-     <widget class="QLabel" name="label_3">
-      <property name="geometry">
-       <rect>
-        <x>510</x>
-        <y>80</y>
-        <width>141</width>
-        <height>19</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>12</pointsize>
-        <underline>false</underline>
-        <strikeout>false</strikeout>
-        <kerning>true</kerning>
-       </font>
-      </property>
-      <property name="text">
-       <string>License is invalid</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="lineEdit_3">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>180</y>
-        <width>1131</width>
-        <height>41</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_2">
-      <property name="geometry">
-       <rect>
-        <x>480</x>
-        <y>270</y>
-        <width>191</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>10</pointsize>
-        <underline>false</underline>
-        <strikeout>false</strikeout>
-        <kerning>true</kerning>
-       </font>
-      </property>
-      <property name="text">
-       <string>Accept</string>
-      </property>
-     </widget>
      <widget class="QGroupBox" name="groupBox">
       <property name="geometry">
        <rect>
@@ -590,17 +551,92 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>9</pointsize>
-         <underline>false</underline>
-         <strikeout>false</strikeout>
-         <kerning>true</kerning>
+            <pointsize>9</pointsize>
+            <underline>false</underline>
+            <strikeout>false</strikeout>
+            <kerning>true</kerning>
         </font>
        </property>
-       <property name="text">
-        <string>Quasar Cook AYCD v0.1</string>
-       </property>
+          <property name="text">
+              <string>Quasar Cook AYCD v0.1</string>
+          </property>
       </widget>
      </widget>
+        <widget class="QWidget" name="verticalLayoutWidget">
+            <property name="geometry">
+                <rect>
+                    <x>280</x>
+                    <y>110</y>
+                    <width>621</width>
+                    <height>201</height>
+                </rect>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout">
+                <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout">
+                        <item>
+                            <spacer name="horizontalSpacer">
+                                <property name="orientation">
+                                    <enum>Qt::Horizontal</enum>
+                                </property>
+                                <property name="sizeHint" stdset="0">
+                                    <size>
+                                        <width>40</width>
+                                        <height>20</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                        </item>
+                        <item>
+                            <widget class="QLabel" name="label_3">
+                                <property name="font">
+                                    <font>
+                                        <pointsize>12</pointsize>
+                                        <underline>false</underline>
+                                        <strikeout>false</strikeout>
+                                        <kerning>true</kerning>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>License is invalid</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item>
+                            <spacer name="horizontalSpacer_2">
+                                <property name="orientation">
+                                    <enum>Qt::Horizontal</enum>
+                                </property>
+                                <property name="sizeHint" stdset="0">
+                                    <size>
+                                        <width>40</width>
+                                        <height>20</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                        </item>
+                    </layout>
+                </item>
+                <item>
+                    <widget class="QLineEdit" name="lineEdit_3"/>
+                </item>
+                <item>
+                    <widget class="QPushButton" name="pushButton_2">
+                        <property name="font">
+                            <font>
+                                <pointsize>10</pointsize>
+                                <underline>false</underline>
+                                <strikeout>false</strikeout>
+                                <kerning>true</kerning>
+                            </font>
+                        </property>
+                        <property name="text">
+                            <string>Accept</string>
+                        </property>
+                    </widget>
+                </item>
+            </layout>
+        </widget>
     </widget>
    </widget>
   </widget>
