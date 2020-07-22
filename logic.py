@@ -51,15 +51,14 @@ class MyWindow(QtWidgets.QMainWindow):
     def checkbox_headless(self):
         """If 1 of 2 checkboxes activated => deactivate previous"""
 
-        if self.ui.checkBox_5.isChecked() == True:
+        if self.ui.checkBox_5.isChecked():
             print(True)
             self.ui.checkBox_6.setChecked(False)
 
     def checkbox_chrome(self):
         """If 1 of 2 checkboxes activated => deactivate previous"""
 
-        if self.ui.checkBox_6.isChecked() == True:
-            print(True)
+        if self.ui.checkBox_6.isChecked():
             self.ui.checkBox_5.setChecked(False)
 
 
