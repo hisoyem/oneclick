@@ -2,12 +2,12 @@
 <ui version="4.0">
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
-  <property name="windowModality">
-   <enum>Qt::NonModal</enum>
-  </property>
-  <property name="enabled">
-      <bool>true</bool>
-  </property>
+     <property name="windowModality">
+         <enum>Qt::NonModal</enum>
+     </property>
+     <property name="enabled">
+         <bool>true</bool>
+     </property>
      <property name="geometry">
          <rect>
              <x>0</x>
@@ -88,7 +88,7 @@
                  <enum>QTabWidget::Rounded</enum>
              </property>
              <property name="currentIndex">
-                 <number>1</number>
+                 <number>0</number>
              </property>
              <property name="iconSize">
                  <size>
@@ -150,6 +150,16 @@
                      <column>
                          <property name="text">
                              <string>Interval</string>
+                         </property>
+                         <property name="font">
+                             <font>
+                                 <pointsize>10</pointsize>
+                             </font>
+                         </property>
+                     </column>
+                     <column>
+                         <property name="text">
+                             <string>Proxy</string>
        </property>
        <property name="font">
         <font>
@@ -159,17 +169,7 @@
       </column>
       <column>
        <property name="text">
-        <string>Proxy</string>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-           <string>Actions</string>
+           <string>Action</string>
        </property>
        <property name="font">
         <font>
@@ -258,21 +258,21 @@
          </property>
         </widget>
        </item>
-       <item row="2" column="0">
-           <widget class="QLabel" name="label_6">
-               <property name="font">
-                   <font>
-                       <pointsize>14</pointsize>
-                       <underline>false</underline>
-                       <strikeout>false</strikeout>
-                       <kerning>true</kerning>
-                   </font>
-               </property>
-               <property name="text">
-                   <string>Set interval</string>
-               </property>
-           </widget>
-       </item>
+          <item row="2" column="0">
+              <widget class="QLabel" name="label_6">
+                  <property name="font">
+                      <font>
+                          <pointsize>14</pointsize>
+                          <underline>false</underline>
+                          <strikeout>false</strikeout>
+                          <kerning>true</kerning>
+                      </font>
+                  </property>
+                  <property name="text">
+                      <string>Set interval</string>
+                  </property>
+              </widget>
+          </item>
           <item row="2" column="1">
               <widget class="QSpinBox" name="spinBox">
                   <property name="maximum">
@@ -387,16 +387,16 @@
                               <string>Youube</string>
                           </property>
                       </widget>
-         </item>
-         <item>
-          <widget class="QCheckBox" name="checkBox_2">
-           <property name="font">
-            <font>
-             <pointsize>10</pointsize>
-             <weight>50</weight>
-             <italic>false</italic>
-             <bold>false</bold>
-             <underline>false</underline>
+                  </item>
+                  <item>
+                      <widget class="QCheckBox" name="checkBox_2">
+                          <property name="font">
+                              <font>
+                                  <pointsize>10</pointsize>
+                                  <weight>50</weight>
+                                  <italic>false</italic>
+                                  <bold>false</bold>
+                                  <underline>false</underline>
              <strikeout>false</strikeout>
              <kerning>true</kerning>
             </font>
@@ -523,79 +523,70 @@
     <widget class="QWidget" name="tab_4">
      <attribute name="icon">
       <iconset>
-       <normaloff>images/settings-5-512.png</normaloff>images/settings-5-512.png</iconset>
-     </attribute>
-     <attribute name="title">
-      <string>Settings</string>
-     </attribute>
-    </widget>
-    <widget class="QWidget" name="tab_5">
-     <attribute name="icon">
-      <iconset>
        <normaloff>images/clipboard-8-512.png</normaloff>images/clipboard-8-512.png</iconset>
      </attribute>
      <attribute name="title">
       <string>License</string>
      </attribute>
-     <widget class="QGroupBox" name="groupBox">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>460</y>
-        <width>1131</width>
-        <height>51</height>
-       </rect>
-      </property>
-         <property name="title">
-             <string/>
-         </property>
-         <property name="flat">
-             <bool>true</bool>
-         </property>
-         <property name="checkable">
-             <bool>false</bool>
-         </property>
-         <widget class="QLabel" name="label_4">
-             <property name="geometry">
-                 <rect>
-                     <x>1080</x>
-                     <y>10</y>
-                     <width>41</width>
-                     <height>41</height>
-                 </rect>
-             </property>
-             <property name="text">
-                 <string/>
-             </property>
-             <property name="pixmap">
-                 <pixmap>images/quasar.png</pixmap>
-             </property>
-             <property name="scaledContents">
-                 <bool>true</bool>
-             </property>
-         </widget>
-         <widget class="QLabel" name="label_5">
-             <property name="geometry">
-                 <rect>
-                     <x>890</x>
-                     <y>20</y>
-                     <width>161</width>
-                     <height>18</height>
-                 </rect>
-             </property>
-             <property name="font">
-                 <font>
-                     <pointsize>9</pointsize>
-                     <underline>false</underline>
-                     <strikeout>false</strikeout>
-                     <kerning>true</kerning>
-                 </font>
-             </property>
-             <property name="text">
-                 <string>Quasar Cook AYCD v0.1</string>
-             </property>
-         </widget>
-     </widget>
+        <widget class="QGroupBox" name="groupBox">
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>460</y>
+                    <width>1131</width>
+                    <height>51</height>
+                </rect>
+            </property>
+            <property name="title">
+                <string/>
+            </property>
+            <property name="flat">
+                <bool>true</bool>
+            </property>
+            <property name="checkable">
+                <bool>false</bool>
+            </property>
+            <widget class="QLabel" name="label_4">
+                <property name="geometry">
+                    <rect>
+                        <x>1080</x>
+                        <y>10</y>
+                        <width>41</width>
+                        <height>41</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string/>
+                </property>
+                <property name="pixmap">
+                    <pixmap>images/quasar.png</pixmap>
+                </property>
+                <property name="scaledContents">
+                    <bool>true</bool>
+                </property>
+            </widget>
+            <widget class="QLabel" name="label_5">
+                <property name="geometry">
+                    <rect>
+                        <x>890</x>
+                        <y>20</y>
+                        <width>161</width>
+                        <height>18</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <pointsize>9</pointsize>
+                        <underline>false</underline>
+                        <strikeout>false</strikeout>
+                        <kerning>true</kerning>
+                    </font>
+                </property>
+                <property name="text">
+                    <string>Quasar Cook AYCD v0.1</string>
+                </property>
+            </widget>
+        </widget>
         <widget class="QWidget" name="verticalLayoutWidget">
             <property name="geometry">
                 <rect>
