@@ -1,5 +1,3 @@
-from selenium import webdriver
-from threading import Thread, Barrier
 from threading import Thread, Barrier
 
 from selenium import webdriver
@@ -7,7 +5,6 @@ from selenium import webdriver
 
 def func(barrier):
     driver = webdriver.Chrome()
-    # driver.set_window_size(920, 680)
     driver.get(url)
 
     driver.find_element_by_id("email").send_keys("xx")
