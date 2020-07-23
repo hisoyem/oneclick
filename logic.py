@@ -3,6 +3,7 @@
 import sys
 
 from PyQt5 import QtWidgets
+from PyQt5.QtWidgets import QAction, QMenu
 
 from gui import Ui_MainWindow  # импорт сгенерированного файла
 
@@ -27,6 +28,17 @@ class MyWindow(QtWidgets.QMainWindow):
         self.ui.pushButton_6.clicked.connect(self.set_0_mins)
         self.ui.checkBox_5.clicked.connect(self.checkbox_headless)
         self.ui.checkBox_6.clicked.connect(self.checkbox_chrome)
+        self.tray_icon = QtWidgets.QSystemTrayIcon(self)
+        self.tray_icon.setIcon(self.style().standardIcon(QtWidgets.QStyle.SP_ComputerIcon))
+        show_action = QAction("Show", self)
+        quit_action = QAction("Exit", self)
+        show_action.triggered.connect(self.show)
+        quit_action.triggered.connect(app.quit)
+        tray_menu = QMenu()
+        tray_menu.addAction(show_action)
+        tray_menu.addAction(quit_action)
+        self.tray_icon.setContextMenu(tray_menu)
+        self.tray_icon.show()
 
     def add_5_mins(self):
         """Add 5 minutes to interval spinBox"""
@@ -59,6 +71,17 @@ class MyWindow(QtWidgets.QMainWindow):
 
         if self.ui.checkBox_6.isChecked():
             self.ui.checkBox_5.setChecked(False)
+
+    def closeEvent(self, event):
+        if self.ui.checkBox_7.isChecked():
+            event.ignore()
+            self.hide()
+            self.tray_icon.showMessage(
+                "Tray Program",
+                "Application was minimized to tray",
+                QtWidgets.QSystemTrayIcon.Information,
+                1000
+            )
 
 
 if __name__ == '__main__':
