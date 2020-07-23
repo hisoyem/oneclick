@@ -3,6 +3,7 @@ from threading import Thread, Barrier
 from selenium import webdriver
 
 
+# -
 def func(barrier):
     driver = webdriver.Chrome()
     driver.get(url)
