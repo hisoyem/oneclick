@@ -136,10 +136,10 @@
                                      </font>
                                  </property>
                                  <property name="text">
-          <string>Login</string>
-         </property>
-        </widget>
-       </item>
+                                     <string>Login</string>
+                                 </property>
+                             </widget>
+                         </item>
                          <item row="0" column="1">
                              <widget class="QLineEdit" name="lineEdit">
                                  <property name="minimumSize">
@@ -158,21 +158,21 @@
                                  </property>
                              </widget>
                          </item>
-       <item row="1" column="0">
-           <widget class="QLabel" name="label_2">
-               <property name="font">
-                   <font>
-                       <pointsize>15</pointsize>
-                       <underline>false</underline>
-                       <strikeout>false</strikeout>
-                       <kerning>true</kerning>
-                   </font>
-               </property>
-               <property name="text">
-                   <string>Password</string>
-               </property>
-           </widget>
-       </item>
+                         <item row="1" column="0">
+                             <widget class="QLabel" name="label_2">
+                                 <property name="font">
+                                     <font>
+                                         <pointsize>15</pointsize>
+                                         <underline>false</underline>
+                                         <strikeout>false</strikeout>
+                                         <kerning>true</kerning>
+                                     </font>
+                                 </property>
+                                 <property name="text">
+                                     <string>Password</string>
+                                 </property>
+                             </widget>
+                         </item>
                          <item row="1" column="1">
                              <widget class="QLineEdit" name="lineEdit_2">
                                  <property name="minimumSize">
@@ -375,16 +375,16 @@
                                  <item>
                                      <widget class="QCheckBox" name="checkBox_4">
                                          <property name="font">
-            <font>
-             <pointsize>10</pointsize>
-             <weight>50</weight>
-             <italic>false</italic>
-             <bold>false</bold>
-             <underline>false</underline>
-             <strikeout>false</strikeout>
-             <kerning>true</kerning>
-            </font>
-           </property>
+                                             <font>
+                                                 <pointsize>10</pointsize>
+                                                 <weight>50</weight>
+                                                 <italic>false</italic>
+                                                 <bold>false</bold>
+                                                 <underline>false</underline>
+                                                 <strikeout>false</strikeout>
+                                                 <kerning>true</kerning>
+                                             </font>
+                                         </property>
            <property name="text">
             <string>Shopping</string>
            </property>
@@ -395,59 +395,79 @@
        <item row="3" column="0" colspan="2">
         <layout class="QHBoxLayout" name="horizontalLayout_3">
          <item>
-          <widget class="QPushButton" name="pushButton_3">
-           <property name="font">
-            <font>
-             <pointsize>10</pointsize>
-             <underline>false</underline>
-             <strikeout>false</strikeout>
-             <kerning>true</kerning>
-            </font>
-           </property>
-           <property name="text">
-            <string>+5 mins</string>
-           </property>
-          </widget>
+             <widget class="QPushButton" name="pushButton_3">
+                 <property name="font">
+                     <font>
+                         <pointsize>10</pointsize>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                         <underline>false</underline>
+                         <strikeout>false</strikeout>
+                         <kerning>true</kerning>
+                     </font>
+                 </property>
+                 <property name="styleSheet">
+                     <string notr="true">color: rgba(128, 0, 128, 125)</string>
+                 </property>
+                 <property name="text">
+                     <string>+5 mins</string>
+                 </property>
+             </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="pushButton_4">
-           <property name="font">
-            <font>
-             <pointsize>10</pointsize>
-             <underline>false</underline>
-             <strikeout>false</strikeout>
-             <kerning>true</kerning>
-            </font>
-           </property>
-           <property name="text">
-               <string>+15 mins</string>
-           </property>
-          </widget>
+             <widget class="QPushButton" name="pushButton_4">
+                 <property name="font">
+                     <font>
+                         <pointsize>10</pointsize>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                         <underline>false</underline>
+                         <strikeout>false</strikeout>
+                         <kerning>true</kerning>
+                     </font>
+                 </property>
+                 <property name="styleSheet">
+                     <string notr="true">color: rgba(128, 0, 128, 125)</string>
+                 </property>
+                 <property name="text">
+                     <string>+15 mins</string>
+                 </property>
+             </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="pushButton_5">
-           <property name="font">
-            <font>
-             <pointsize>10</pointsize>
-             <underline>false</underline>
-             <strikeout>false</strikeout>
-             <kerning>true</kerning>
-            </font>
-           </property>
-           <property name="text">
-            <string>+1 hr</string>
-           </property>
-          </widget>
+             <widget class="QPushButton" name="pushButton_5">
+                 <property name="font">
+                     <font>
+                         <pointsize>10</pointsize>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                         <underline>false</underline>
+                         <strikeout>false</strikeout>
+                         <kerning>true</kerning>
+                     </font>
+                 </property>
+                 <property name="styleSheet">
+                     <string notr="true">color: rgba(128, 0, 128, 125)</string>
+                 </property>
+                 <property name="text">
+                     <string>+1 hr</string>
+                 </property>
+             </widget>
          </item>
             <item>
                 <widget class="QPushButton" name="pushButton_6">
                     <property name="font">
                         <font>
                             <pointsize>10</pointsize>
+                            <weight>75</weight>
+                            <bold>true</bold>
                             <underline>false</underline>
                             <strikeout>false</strikeout>
                             <kerning>true</kerning>
                         </font>
+                    </property>
+                    <property name="styleSheet">
+                        <string notr="true">color: rgba(128, 0, 128, 125)</string>
                     </property>
                     <property name="text">
                         <string>Back to 0</string>
